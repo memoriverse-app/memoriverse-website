@@ -176,3 +176,26 @@ summary { cursor: pointer; font-size: .83rem; font-weight: 600; padding-right: 8
   html { scroll-behavior: auto; } *, *::before, *::after { animation: none !important; transition: none !important; }
   [data-reveal].reveal-pending { opacity: 1; transform: none; }
 }
+
+/* Published policy: scoped styles retain the existing website layout. */
+.policy-date { color: #e4e8d6; margin-top: 20px; font-size: .88rem; }
+.policy-document { max-width: 960px; }
+.policy-contents { display: flex; flex-wrap: wrap; gap: 10px 24px; padding: 24px 0 8px; font-size: .88rem; }
+.policy-section { scroll-margin-top: 115px; }
+.policy-document h3 { font-size: 1.2rem; line-height: 1.35; letter-spacing: -.02em; margin-top: 28px; }
+.policy-document li { margin-block: 12px; }
+.policy-document a { overflow-wrap: anywhere; }
+.policy-document table { border-collapse: collapse; width: 100%; margin-top: 22px; font-size: .88rem; }
+.policy-document th, .policy-document td { text-align: left; vertical-align: top; padding: 14px 12px; border-bottom: 1px solid var(--line); }
+.policy-document thead { background: var(--sage); }
+.policy-document th[scope="row"] { width: 25%; }
+.policy-document .policy-end { border-top: 1px solid var(--line); padding-top: 20px; margin-top: 36px; }
+@media (max-width: 640px) {
+ .policy-document table, .policy-document tbody, .policy-document tr, .policy-document td, .policy-document th[scope="row"] { display: block; width: 100%; }
+ .policy-document thead { display: none; }
+ .policy-document tr { border-bottom: 1px solid var(--line); padding-block: 10px; }
+ .policy-document th, .policy-document td { border: 0; padding: 6px 0; }
+ .policy-document ul { padding-left: 20px; }
+ .policy-document li { font-size: .85rem; }
+ .policy-contents { gap: 10px 18px; }
+}

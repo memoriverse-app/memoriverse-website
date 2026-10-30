@@ -5,7 +5,7 @@ A standalone static GitHub Pages site, separate from the private mobile app. No 
 ## Pages
 
 - `index.html` — app introduction, current release status, learning overview and existing Gabe artwork.
-- `privacy.html` — clearly labelled publication holding notice. **Not a completed Privacy Policy.** Excluded from the sitemap and marked noindex until the policy is ready.
+- `privacy.html` — owner-authorised Privacy Policy, effective 30 October 2026. Describes current behaviour and clearly marks family features and retention/deletion work that remain in development.
 - `support.html` — confirmed support/privacy email, basic help and deletion enquiry contact.
 - `404.html` — page-not-found recovery.
 
@@ -20,15 +20,19 @@ GitHub Settings → Pages → Build and deployment → Deploy from a branch → 
 
 Official configuration instructions: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
 
-## Publish the final policy
+## Privacy publication
 
-The detailed review draft is deliberately outside this public repository. Merge the owner's policy draft with the verified V1 behaviour before replacing the holding page.
+Publication of the approved policy was explicitly authorised on 30 October 2026.
+The operator is Yolanda King; the contact is memoriverseapp@gmail.com.
+Scripture memorisation is learning activity; the app does not infer or profile
+religious beliefs. The public page contains no internal reviewer notes or project
+identifiers. Its retention targets and unfinished family/cleanup capabilities are
+labelled accurately, rather than presented as operating guarantees.
 
-Confirm the legal controller/person or company and contact details; purposes and lawful bases (including religious learning data); exact collected/synced fields and provider arrangements; hosting regions and international transfers; logs, telemetry, cookies/SDK inventory; retention and backup expiry; tested account/child-save deletion and support procedures; speech/notification behaviour; and applicable rights/complaint information. Confirm the effective/publication date. Do not invent these facts from source code.
-
-Support/privacy contact confirmed by the owner on 30 October 2026: memoriverseapp@gmail.com.
-
-After approving the final text, replace only the main policy content, remove `noindex` from that page, update its description and add `privacy.html` to `sitemap.xml`. Keep the same public policy URL. Do not supply the holding notice to app stores as a finished policy. App links and store disclosures are separate release work; this website job does not change the app.
+The effective date is 30 October 2026. The custom domain was checked by DNS and
+valid HTTPS before publication. Privacy is linked in navigation and footers and
+included in the sitemap. Website publication does not authorise app deployments,
+database migrations, KWS production activation or real-child data migration.
 
 ## Store links
 
