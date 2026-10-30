@@ -14,9 +14,9 @@ All assets are local. The green gradient uses colours sampled from the app logo 
 ## Hosting
 
 Target: `memoriverse-app/memoriverse-website` (PUBLIC), branch `codex/website`, root `/`.
-Expected GitHub Pages address: https://memoriverse-app.github.io/memoriverse-website/
+Public website: https://memoriverse.app/
 
-GitHub Settings → Pages → Build and deployment → Deploy from a branch → `codex/website` → `/ (root)` → Save. `.nojekyll` keeps the site buildless. No custom domain is configured. The expected address is not evidence that deployment has completed; inspect Pages status and load the live pages.
+GitHub Settings → Pages → Build and deployment → Deploy from a branch → `codex/website` → `/ (root)` → Save. `.nojekyll` keeps the site buildless. The configured custom domain is `memoriverse.app`, preserved in `CNAME`. Inspect Pages deployment status and verify HTTPS on the custom domain after publishing.
 
 Official configuration instructions: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
 
@@ -34,12 +34,14 @@ After approving the final text, replace only the main policy content, remove `no
 
 Replace the coming-soon copy with real App Store / Google Play links only after official listings exist. There are deliberately no simulated store buttons.
 
-## Optional custom domain
+## Custom domain
 
-Choose and confirm an owned domain/subdomain and verify it is not already serving iDesignApps or another project. Add it only to this repository's Pages settings, then set the matching DNS records at the provider following GitHub's current documentation. For a subdomain, the DNS CNAME target is `memoriverse-app.github.io` (no repository path). Preserve all unrelated DNS and existing sites. Enable HTTPS after verification and certificate provisioning. Update canonical/OG URLs, sitemap, robots and the absolute 404 home path if the site moves to the domain root.
+`memoriverse.app` is configured in GitHub Pages and `CNAME`. Public canonical URLs, Open Graph page/image URLs, sitemap locations and the robots sitemap address use `https://memoriverse.app/`. The 404 home link points to `/`. Preserve the existing domain and DNS configuration.
 
-Official instructions: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site
+Once GitHub has provisioned the domain certificate, enable **Enforce HTTPS** in Settings → Pages. Certificate issuance is managed by GitHub and is separate from these source changes.
+
+Official HTTPS instructions: https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https
 
 ## Local preview
 
-From this directory: `python3 -m http.server 4177 --bind 127.0.0.1` then open http://127.0.0.1:4177/ . No dependencies are needed. All links work beneath a GitHub project subpath.
+From this directory: `python3 -m http.server 4177 --bind 127.0.0.1` then open http://127.0.0.1:4177/ . No dependencies are needed. Public URLs target the custom domain root; normal navigation and assets use relative paths.
