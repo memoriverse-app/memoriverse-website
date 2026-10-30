@@ -57,7 +57,9 @@ h3 { font-size: 2rem; }
 .experience { background: var(--ivory); border-radius: 36px 36px 0 0; }
 .eyebrow { text-transform: uppercase; font-size: .65rem; font-weight: 650; letter-spacing: .14em; margin-bottom: 22px; color: var(--muted); }
 .section-heading { text-align: center; }
-.section-heading > p:last-child { font-size: .95rem; max-width: 440px; margin: 22px auto 0; color: var(--muted); }
+.section-heading > .section-intro { font-size: .95rem; max-width: 440px; margin: 22px auto 0; color: var(--muted); }
+.translation-note { max-width: 620px; margin: 24px auto 0; font-size: .87rem; line-height: 1.8; color: var(--muted); }
+.translation-note strong { display: block; color: var(--forest); font-weight: 600; }
 .feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 50px; }
 .feature { border-radius: 22px; padding: 28px; min-width: 0; display: flex; flex-direction: column; overflow: hidden; }
 .feature-learn { background: var(--sage); }
@@ -65,7 +67,6 @@ h3 { font-size: 2rem; }
 .feature-grow { background: #f1e7c4; }
 .feature-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 40px; }
 .feature-index { font-size: .56rem; letter-spacing: .1em; font-weight: 650; }
-.feature-symbol { display: grid; place-items: center; border: 1px solid currentColor; border-radius: 50%; width: 28px; height: 28px; opacity: .6; font-size: .95rem; }
 .feature h3 { font-size: clamp(1.5rem, 2.7vw, 2.2rem); margin-bottom: 18px; }
 .feature > p { font-size: .84rem; line-height: 1.75; opacity: .8; }
 .learning-sequence { display: flex; align-items: center; gap: 7px; flex-wrap: wrap; margin-top: auto; padding-top: 36px; }
@@ -82,11 +83,8 @@ h3 { font-size: 2rem; }
 .journey-copy > p:not(.eyebrow) { color: var(--muted); max-width: 390px; font-size: .93rem; margin: 25px 0; }
 .inline-link { display: inline-flex; gap: 24px; font-size: .8rem; font-weight: 600; }
 .guide-card { background: var(--sage); border: 1px solid #d5decf; border-radius: 28px; padding: 30px; text-align: center; }
-.guide-card-label { display: flex; align-items: center; justify-content: center; gap: 10px; font-size: .6rem; color: var(--muted); }
-.guide-card-label .status-dot { background: var(--forest); box-shadow: none; width: 5px; height: 5px; }
-.guide-card img { width: 200px; margin: 30px auto 18px; }
+.guide-card img { width: 330px; margin: 8px auto 18px; }
 .guide-card > p { font-size: 1.55rem; font-weight: 500; line-height: 1.25; letter-spacing: -.04em; }
-.guide-caption { display: block; font-size: .6rem; color: var(--muted); margin-top: 18px; }
 .family { background: #edf0e7; }
 .family-heading { text-align: center; }
 .mode-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-top: 50px; }
@@ -159,11 +157,11 @@ summary { cursor: pointer; font-size: .83rem; font-weight: 600; padding-right: 8
   .phone figcaption { font-size: .48rem; padding-top: 15px; }.preview-note { font-size: .52rem; margin-top: 20px; }.scroll-cue { margin-top: 16px; }
   .section-pad { padding-block: 65px; }.experience { border-radius: 24px 24px 0 0; }
   h2 { font-size: 2.2rem; }.eyebrow { font-size: .58rem; margin-bottom: 18px; }
-  .section-heading > p:last-child { font-size: .86rem; }.feature-grid { grid-template-columns: 1fr; gap: 14px; margin-top: 35px; }
+  .section-heading > .section-intro { font-size: .86rem; }.feature-grid { grid-template-columns: 1fr; gap: 14px; margin-top: 35px; }
   .feature { padding: 27px; }.feature h3 { font-size: 2rem; }.feature-top { margin-bottom: 25px; }.feature > p { max-width: 350px; }
   .learning-sequence { padding-top: 26px; }.review-motif { max-width: 230px; }.seed-wordmark { padding-top: 25px; }
   .journey { padding-top: 0; }.journey-grid { grid-template-columns: 1fr; gap: 35px; }.journey-copy h2 { font-size: 2.8rem; }.journey-copy > p:not(.eyebrow) { font-size: .87rem; }
-  .guide-card { padding: 25px; }.guide-card img { width: 180px; }.guide-card > p { font-size: 1.5rem; }.guide-card-label { font-size: .53rem; }
+  .guide-card { padding: 25px; }.guide-card img { width: 260px; }.guide-card > p { font-size: 1.5rem; }
   .mode-grid { grid-template-columns: 1fr; gap: 16px; margin-top: 35px; }.mode-card { padding: 28px; }.mode-card h3 { font-size: 1.8rem; }.mode-label { margin-bottom: 24px; }
   .launch { padding-block: 70px; }.launch h2 { font-size: 3.5rem; }.launch p:not(.eyebrow) { font-size: .8rem; }
   .footer-inner { flex-direction: column; align-items: start; gap: 22px; }.footer-inner nav { gap: 24px; }
