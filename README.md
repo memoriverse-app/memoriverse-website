@@ -5,7 +5,7 @@ A standalone static GitHub Pages site, separate from the private mobile app. No 
 ## Pages
 
 - `index.html` — app introduction, current release status, learning overview and existing Gabe artwork.
-- `privacy.html` — owner-authorised Privacy Policy, effective 30 October 2026. Describes current behaviour and clearly marks family features and retention/deletion work that remain in development.
+- `privacy.html` — owner-authorised Privacy Policy, effective 30 October 2026. Describes the first invited-tester release and its privacy commitments. Development blockers are tracked privately in the app repository, not presented as public feature descriptions.
 - `support.html` — confirmed support/privacy email, basic help and deletion enquiry contact.
 - `404.html` — page-not-found recovery.
 
