@@ -78,12 +78,12 @@ h3 { font-size: 2rem; }
 .seed-wordmark { font-size: 1.3rem; font-weight: 600; line-height: 1.2; letter-spacing: -.045em; padding-top: 38px; margin-top: auto; }
 .seed-wordmark span { opacity: .55; }
 .journey { background: var(--ivory); padding-top: 25px; }
-.journey-grid { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 90px; }
+.journey-grid { display: grid; grid-template-columns: .85fr 1.15fr; align-items: center; gap: 60px; }
 .journey-copy h2 span { color: #8a9d87; }
 .journey-copy > p:not(.eyebrow) { color: var(--muted); max-width: 390px; font-size: .93rem; margin: 25px 0; }
 .inline-link { display: inline-flex; gap: 24px; font-size: .8rem; font-weight: 600; }
 .guide-card { background: var(--sage); border: 1px solid #d5decf; border-radius: 28px; padding: 30px; text-align: center; }
-.guide-card img { width: 330px; margin: 8px auto 18px; }
+.guide-card img { width: 100%; margin: 8px auto 18px; border-radius: 16px; }
 .guide-card > p { font-size: 1.55rem; font-weight: 500; line-height: 1.25; letter-spacing: -.04em; }
 .family { background: #edf0e7; }
 .family-heading { text-align: center; }
@@ -161,7 +161,7 @@ summary { cursor: pointer; font-size: .83rem; font-weight: 600; padding-right: 8
   .feature { padding: 27px; }.feature h3 { font-size: 2rem; }.feature-top { margin-bottom: 25px; }.feature > p { max-width: 350px; }
   .learning-sequence { padding-top: 26px; }.review-motif { max-width: 230px; }.seed-wordmark { padding-top: 25px; }
   .journey { padding-top: 0; }.journey-grid { grid-template-columns: 1fr; gap: 35px; }.journey-copy h2 { font-size: 2.8rem; }.journey-copy > p:not(.eyebrow) { font-size: .87rem; }
-  .guide-card { padding: 25px; }.guide-card img { width: 260px; }.guide-card > p { font-size: 1.5rem; }
+  .guide-card { padding: 25px; }.guide-card > p { font-size: 1.5rem; }
   .mode-grid { grid-template-columns: 1fr; gap: 16px; margin-top: 35px; }.mode-card { padding: 28px; }.mode-card h3 { font-size: 1.8rem; }.mode-label { margin-bottom: 24px; }
   .launch { padding-block: 70px; }.launch h2 { font-size: 3.5rem; }.launch p:not(.eyebrow) { font-size: .8rem; }
   .footer-inner { flex-direction: column; align-items: start; gap: 22px; }.footer-inner nav { gap: 24px; }
