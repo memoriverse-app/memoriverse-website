@@ -1,6 +1,6 @@
 # MemoriVerse public website
 
-A standalone static GitHub Pages site, separate from the private mobile app. No build, package installation, JavaScript, remote fonts, forms, analytics or browser storage are used by these website files. GitHub hosting may process request data under its own policies; this README makes no claims about GitHub's retention.
+A standalone static GitHub Pages site, separate from the private mobile app. No build or package installation is needed. These website files use local assets and a small scroll-reveal script, with no remote fonts, forms, analytics or browser storage. GitHub hosting may process request data under its own policies; this README makes no claims about GitHub's retention.
 
 ## Pages
 
@@ -9,7 +9,7 @@ A standalone static GitHub Pages site, separate from the private mobile app. No 
 - `support.html` — confirmed support/privacy email, basic help and deletion enquiry contact.
 - `404.html` — page-not-found recovery.
 
-All assets are local. `assets/memoriverse-logo.png` is copied unchanged from the app's configured `assets/brand/launcher-icon.png`. Gabe is the existing `assets/brand/welcome.png`, referenced by the app's guide artwork manifest. No app source, environment files, keys, user data or backend configuration belong in this repository.
+All assets are local. The green gradient uses colours sampled from the app logo (#2d5a38, #285535, #0d2a20 and #041e15). `app-welcome.jpg`, `app-learn.jpg` and `app-lesson.jpg` are actual captures of the existing local web app preview at 390×844, showing a guest journey without personal account information; they are labelled as web-preview screenshots on the site. The mobile layout shows the Learn and lesson screens. Smooth native anchor scrolling and progressively enhanced section reveals respect reduced-motion preferences and do not take over wheel or touch scrolling. `assets/memoriverse-logo.png` is copied unchanged from the app's configured `assets/brand/launcher-icon.png`. Gabe is the existing `assets/brand/welcome.png`, referenced by the app's guide artwork manifest. No app source, environment files, keys, user data or backend configuration belong in this repository.
 
 ## Hosting
 
