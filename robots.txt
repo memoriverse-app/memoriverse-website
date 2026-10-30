@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://memoriverse-app.github.io/memoriverse-website/sitemap.xml
