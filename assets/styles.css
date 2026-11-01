@@ -239,3 +239,9 @@ summary { cursor: pointer; font-size: .83rem; font-weight: 600; padding-right: 8
 .beta-content {padding:55px 0;}
 .beta-why {margin-top:52px;gap:20px;}
 }
+
+/* Keep both homepage beta invitations legible and responsive. */
+.beta-banner-actions {display:flex;flex-wrap:wrap;gap:10px;justify-content:flex-end;align-items:center;}
+.beta-announcement .beta-banner-secondary {background:transparent;color:#103529;border:1px solid #103529;}
+.beta-announcement .beta-banner-secondary:hover {background:#10352912;}
+@media(max-width:700px){.beta-banner-actions {justify-content:flex-start;}}
