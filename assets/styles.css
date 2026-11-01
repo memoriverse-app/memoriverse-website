@@ -201,14 +201,6 @@ summary { cursor: pointer; font-size: .83rem; font-weight: 600; padding-right: 8
 }
 
 /* Beta invitation announcement and accessible signup page. */
-.beta-announcement { background:#f0dfa6; color:#103529; padding:115px 0 26px; }
-.beta-announcement-inner { display:flex; justify-content:space-between; align-items:center; gap:25px; }
-.beta-announcement-inner > div { display:flex; flex-direction:column; line-height:1.45; }
-.beta-announcement strong {font-size:1.08rem; letter-spacing:-.03em;}
-.beta-announcement span {font-size:.81rem;}
-.beta-announcement a {padding:12px 20px; background:#103529; border-radius:12px; color:#fffdf2; text-decoration:none; font-weight:650; font-size:.82rem; flex-shrink:0;}
-.beta-announcement a:hover {background:#255a42;}
-.beta-announcement + .hero {padding-top:65px;}
 .beta-hero {background:var(--logo-gradient);color:var(--ivory);padding:158px 0 90px;}
 .beta-hero-inner {max-width:810px;}
 .beta-hero h1 {font-size:clamp(3.1rem,7vw,5.7rem);margin:22px 0;line-height:1.06;}
@@ -229,10 +221,6 @@ summary { cursor: pointer; font-size: .83rem; font-weight: 600; padding-right: 8
 .beta-why h2 {margin:0;}
 .beta-why p {margin-bottom:15px;}
 @media(max-width:700px) {
-.beta-announcement {padding-top:95px;}
-.beta-announcement-inner {flex-direction:column;align-items:stretch;gap:13px;}
-.beta-announcement a {align-self:start;}
-.beta-announcement + .hero {padding-top:45px;}
 .beta-hero {padding:125px 0 55px;}
 .beta-platforms,.beta-why {grid-template-columns:1fr;}
 .beta-card {padding:26px;}
@@ -240,8 +228,30 @@ summary { cursor: pointer; font-size: .83rem; font-weight: 600; padding-right: 8
 .beta-why {margin-top:52px;gap:20px;}
 }
 
-/* Keep both homepage beta invitations legible and responsive. */
-.beta-banner-actions {display:flex;flex-wrap:wrap;gap:10px;justify-content:flex-end;align-items:center;}
-.beta-announcement .beta-banner-secondary {background:transparent;color:#103529;border:1px solid #103529;}
-.beta-announcement .beta-banner-secondary:hover {background:#10352912;}
-@media(max-width:700px){.beta-banner-actions {justify-content:flex-start;}}
+
+/* The homepage beta invitation is part of the forest-green hero, not a separate banner. */
+.beta-hero-invite {
+  display:flex; align-items:center; gap:16px; max-width:690px; margin:29px auto 0;
+  padding:15px 19px; border:1px solid #f0dfa63e; border-radius:16px;
+  background:linear-gradient(105deg,#f0dfa61d,#ffffff08 85%);
+  box-shadow:inset 0 1px #ffffff12,0 12px 28px #061a112b;
+  color:var(--ivory); text-decoration:none; text-align:left;
+  transition:border-color .2s ease, background .2s ease, transform .2s ease;
+}
+.beta-hero-invite:hover {border-color:#f0dfa68a;background:linear-gradient(105deg,#f0dfa633,#ffffff11);transform:translateY(-2px);}
+.beta-hero-invite-mark {display:grid;place-items:center;flex:none;width:37px;height:37px;border-radius:12px;background:#f0dfa620;color:var(--gold);font-size:1.2rem;}
+.beta-hero-invite-copy {display:flex;flex:1;min-width:0;flex-direction:column;gap:3px;}
+.beta-hero-invite-copy strong {font-size:.88rem;line-height:1.35;font-weight:700;letter-spacing:-.01em;}
+.beta-hero-invite-copy > span {font-size:.75rem;color:#cddbc9;line-height:1.5;}
+.beta-hero-invite-action {display:inline-flex;align-items:center;white-space:nowrap;gap:9px;color:var(--gold);font-size:.76rem;font-weight:700;}
+.hero .beta-hero-invite + .actions {margin-top:27px;}
+@media(max-width:640px) {
+  .beta-hero-invite {padding:14px 15px;gap:12px;border-radius:14px;}
+  .beta-hero-invite-mark {width:33px;height:33px;font-size:1rem;}
+  .beta-hero-invite-copy > span {font-size:.7rem;}
+  .beta-hero-invite-action {font-size:.72rem;}
+}
+@media(max-width:420px) {
+  .beta-hero-invite {flex-wrap:wrap;}
+  .beta-hero-invite-action {margin-left:45px;}
+}
