@@ -199,3 +199,43 @@ summary { cursor: pointer; font-size: .83rem; font-weight: 600; padding-right: 8
  .policy-document li { font-size: .85rem; }
  .policy-contents { gap: 10px 18px; }
 }
+
+/* Beta invitation announcement and accessible signup page. */
+.beta-announcement { background:#f0dfa6; color:#103529; padding:115px 0 26px; }
+.beta-announcement-inner { display:flex; justify-content:space-between; align-items:center; gap:25px; }
+.beta-announcement-inner > div { display:flex; flex-direction:column; line-height:1.45; }
+.beta-announcement strong {font-size:1.08rem; letter-spacing:-.03em;}
+.beta-announcement span {font-size:.81rem;}
+.beta-announcement a {padding:12px 20px; background:#103529; border-radius:12px; color:#fffdf2; text-decoration:none; font-weight:650; font-size:.82rem; flex-shrink:0;}
+.beta-announcement a:hover {background:#255a42;}
+.beta-announcement + .hero {padding-top:65px;}
+.beta-hero {background:var(--logo-gradient);color:var(--ivory);padding:158px 0 90px;}
+.beta-hero-inner {max-width:810px;}
+.beta-hero h1 {font-size:clamp(3.1rem,7vw,5.7rem);margin:22px 0;line-height:1.06;}
+.beta-hero h1 span {color:var(--gold);}
+.beta-hero p:not(.status) {max-width:670px;color:#d4dfd1;margin:15px 0;line-height:1.75;}
+.beta-hero .beta-lead {font-size:1.22rem!important;color:#fffdf2!important;}
+.beta-hero .button {margin-top:20px;}
+.beta-content {background:var(--ivory);padding:78px 0 90px;}
+.beta-content h2 {margin-bottom:35px;}
+.beta-platforms {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;}
+.beta-card {background:white;border:1px solid var(--line);border-radius:22px;padding:32px;display:flex;flex-direction:column;align-items:start;gap:18px;}
+.beta-card h3 {font-size:2rem;}
+.beta-card p {font-size:.94rem;line-height:1.7;}
+.beta-card .button {margin-top:auto;}
+.beta-platform-label {display:inline-flex;padding:5px 13px;border-radius:30px;background:var(--sage);font-size:.73rem;font-weight:700;}
+.beta-note {font-size:.81rem!important;color:#51645a;}
+.beta-why {display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:76px;border-top:1px solid var(--line);padding-top:55px;}
+.beta-why h2 {margin:0;}
+.beta-why p {margin-bottom:15px;}
+@media(max-width:700px) {
+.beta-announcement {padding-top:95px;}
+.beta-announcement-inner {flex-direction:column;align-items:stretch;gap:13px;}
+.beta-announcement a {align-self:start;}
+.beta-announcement + .hero {padding-top:45px;}
+.beta-hero {padding:125px 0 55px;}
+.beta-platforms,.beta-why {grid-template-columns:1fr;}
+.beta-card {padding:26px;}
+.beta-content {padding:55px 0;}
+.beta-why {margin-top:52px;gap:20px;}
+}
